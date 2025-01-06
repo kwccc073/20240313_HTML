@@ -1,7 +1,7 @@
-<!-- html5的結構 -->
+<!-- <!DOCTYPE html>表示html5的結構 -->
 <!DOCTYPE html>
 <!-- lang 是語系 -->
-<!-- HTML 根元素，在 CSS 偽類 :root 指的就是 html -->
+<!-- HTML 根元素，在 CSS中的選擇器偽類－ :root 指的就是 html -->
 <html lang="zh-TW">
 
 <head>
@@ -12,7 +12,7 @@
     <!-- 瀏覽器搜尋的時候，會以content的值來顯示 -->
     <meta name="description" content="這是我第一個網頁">
     <title>這是我的第一個網頁</title>
-    <!-- 外部樣式表 css檔案，目前沒作用 -->
+    <!-- 外部樣式表（css檔案）的呈現方式，目前沒作用 -->
     <link rel="stylesheet" href="./css/example.css">
     <!-- style 標籤指的是該網頁使用的樣式 -->
     <style>
@@ -20,12 +20,6 @@
             background: #ffa;
         }
     </style>
-    body{
-    background: #ffa;
-    padding-bottom: 300px;
-    }
-
-
 </head>
 
 <body>
@@ -152,11 +146,15 @@
         <hr>
 
         <h2>頁框</h2>
+        <!-- iframe標籤加name="自訂的名稱" -->
+        <!-- a標籤加target="頁框的name"-->
+        <!-- 這樣就可以使點擊a之後，改變iframe裡面的內容 -->
         <a href="./others/hello.html" target="myframe">載入hello.html到一個name叫myframe的頁框裡面</a><br><br>
         <!-- iframe 是在頁面裡挖一個框框，載入另一個頁面 -->
         <!-- 將 main.html做為預設頁面 -->
         <!-- frameborder是外框，0的話就沒有框 -->
         <!-- scrolling是捲動軸，預設是有(yes) -->
+        <!-- main.html是這個頁框的預設內容 -->
         <iframe src="./others/main.html" frameborder="1" width="800" height="400" scrolling="no"
             name="myframe"></iframe>
 
